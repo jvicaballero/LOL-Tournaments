@@ -12,8 +12,10 @@ export const getMatchById = async (id) => {
   return response.json();
 };
 
+// Based on the venueID I need to return the different matches at that venue.
 export const getMatchesByVenueId = async (venueId) => {
   const response = await fetch(`/api/venues/${venueId}/matches`);
-  if (!response.ok) throw new Error(`Failed to fetch matches for venue ${venueId}`);
+  if (!response.ok)
+    throw new Error(`Failed to fetch matches for venue ${venueId}`);
   return response.json();
 };
