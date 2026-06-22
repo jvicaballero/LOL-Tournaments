@@ -1,0 +1,60 @@
+.venue-card-link {
+  text-decoration: none;
+}
+
+.venues-page {
+  padding: 30px 50px;
+}
+
+.venues-page h2 {
+  color: rgb(55, 216, 232);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.venues-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.venue-card {
+  width: 280px;
+  height: 320px;
+  border-radius: 8px;
+  border: 1px solid rgba(55, 216, 232, 0.4);
+  background-color: rgba(0, 0, 0, 0.75);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.3s ease;
+  position: relative;
+}
+
+.venue-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(55, 216, 232, 0.9);
+}
+
+.venue-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+}
+
+.venue-card-name {
+  color: white;
+  margin: 0 0 4px 0;
+  font-size: 1em;
+}
+
+.venue-card-location {
+  color: rgb(55, 216, 232);
+  font-size: 0.8em;
+  margin: 0;
+}

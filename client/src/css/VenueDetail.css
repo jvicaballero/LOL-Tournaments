@@ -1,0 +1,51 @@
+.venue-detail {
+  color: white;
+  width: 100%;
+}
+
+.venue-detail-header {
+  height: 280px;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.venue-detail-header-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 20%, rgba(0, 0, 0, 0.85));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px 50px;
+  gap: 6px;
+}
+
+.venue-detail-header-overlay h2 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.venue-detail-header-overlay p {
+  margin: 0;
+  color: rgb(55, 216, 232);
+  font-size: 0.95em;
+}
+
+.venue-detail-matches {
+  padding: 30px 50px;
+}
+
+.venue-detail-matches h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: rgb(55, 216, 232);
+  margin-bottom: 24px;
+}
+
+.venue-detail-status {
+  padding: 40px;
+  text-align: center;
+  color: white;
+}

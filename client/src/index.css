@@ -1,33 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800;900&display=swap');
 
 #root {
-    background: url('./assets/unitygrid.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background: linear-gradient(160deg, #050918 0%, #091428 50%, #0a1428 100%);
     background-attachment: fixed;
-    background-color: var(--secondary-color);
     font-family: Nunito Sans, Verdana, sans-serif;
-    height: 100vh;
-    --main-color: rgb(217, 29, 242);
-    --secondary-color: rgb(3, 1, 64);
+    min-height: 100vh;
+    --main-color: rgb(55, 216, 232);
+    --secondary-color: rgb(5, 9, 24);
     --primary: var(--main-color);
-    --primary-hover: rgb(111, 28, 166);
-    --primary-focus: rgb(217, 29, 242);
+    --primary-hover: rgb(30, 170, 185);
+    --primary-focus: rgb(55, 216, 232);
     --secondary: var(--secondary-color);
-    --secondary-hover: rgb(4, 66, 191);
-    --secondary-focus: rgb(111, 28, 166);
+    --secondary-hover: rgb(9, 20, 40);
+    --secondary-focus: rgb(5, 9, 24);
     --h1-color: white;
     --h2-color: white;
     --h3-color: white;
     --card-background-color: none;
-    --form-element-background-color: white;
-    --form-element-border-color: var(--main-color);
-    --form-element-color: black;
-    --form-element-placeholder-color: black;
-    --form-element-active-border-color: var(--secondary-color);
-    --form-element-active-background-color: white;
+    --form-element-background-color: rgba(0, 0, 0, 0.75);
+    --form-element-border-color: rgba(55, 216, 232, 0.4);
+    --form-element-color: white;
+    --form-element-placeholder-color: rgba(255, 255, 255, 0.5);
+    --form-element-active-border-color: rgb(55, 216, 232);
+    --form-element-active-background-color: rgba(0, 0, 0, 0.75);
 }
 
 #root h1, #root h2, #root h3 {
@@ -36,10 +32,12 @@
 }
 
 #root h1 {
-    font-family: Rock Salt, cursive;
-    font-size: 3em;
-    font-weight: bold;
-    text-shadow: 3px 3px 4px black;
+    font-family: Cinzel, Georgia, serif;
+    font-size: 2em;
+    font-weight: 900;
+    color: rgb(55, 216, 232);
+    text-shadow: 0 0 24px rgba(55, 216, 232, 0.5);
+    letter-spacing: 3px;
 }
 
 #root h2 {
@@ -61,12 +59,23 @@
 
 #root [role=button] {
     text-transform: uppercase;
-    font-weight: 900;
-    font-size: 1.5em;
-    border: 2px solid white;
+    font-weight: 700;
+    font-size: 0.85em;
+    letter-spacing: 1px;
+    border: 1px solid rgba(55, 216, 232, 0.5);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+#root [role=button]:hover {
+    border-color: rgb(55, 216, 232);
+    background-color: rgba(55, 216, 232, 0.1);
+    color: white;
 }
 
 #root article {
@@ -74,5 +83,5 @@
 }
 
 #root select {
-    width: 400px;
+    width: auto;
 }

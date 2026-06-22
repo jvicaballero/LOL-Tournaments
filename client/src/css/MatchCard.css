@@ -1,0 +1,109 @@
+.match-card {
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(55, 216, 232, 0.4);
+  border-radius: 8px;
+  padding: 20px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: white;
+  transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.match-card:hover {
+  border-color: rgba(55, 216, 232, 0.9);
+  transform: translateY(-4px);
+}
+
+.match-round {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 2px;
+  color: rgb(55, 216, 232);
+  margin: 0;
+}
+
+.match-teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 12px;
+}
+
+.team-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.team-icon {
+  color: rgb(55, 216, 232);
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.team-name {
+  font-weight: 700;
+  font-size: 0.9em;
+  text-align: center;
+  word-break: break-word;
+}
+
+.vs {
+  font-size: 1.1em;
+  font-weight: 900;
+  color: rgb(55, 216, 232);
+  flex-shrink: 0;
+}
+
+.match-meta {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 4px;
+}
+
+.match-meta p {
+  margin: 0;
+  font-size: 0.85em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.match-meta i {
+  margin-right: 6px;
+  color: rgb(55, 216, 232);
+}
+
+.match-details-btn {
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+  padding-top: 4px;
+}
+
+.team-victor-label {
+  font-size: 0.65em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: rgb(55, 216, 232);
+  text-transform: uppercase;
+}
+
+.team-display.loser {
+  opacity: 0.35;
+  filter: grayscale(60%);
+}

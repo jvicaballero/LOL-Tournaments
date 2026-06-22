@@ -1,55 +1,52 @@
-import React from 'react'
-import { useRoutes, Link } from 'react-router-dom'
-import Locations from './pages/Locations'
-import LocationEvents from './pages/LocationEvents'
-import Events from './pages/Events'
-import './App.css'
+import React from "react";
+import { useRoutes, Link } from "react-router-dom";
+import Matches from "./pages/Matches";
+import MatchDetail from "./pages/MatchDetail";
+import Venues from "./pages/Venues";
+import VenueDetail from "./pages/VenueDetail";
+import "./App.css";
 
 const App = () => {
   let element = useRoutes([
     {
-      path: '/',
-      element: <Locations />
+      path: "/",
+      element: <Venues />,
     },
     {
-      path: '/echolounge',
-      element: <LocationEvents index={1} />
+      path: "/matches",
+      element: <Matches />,
     },
     {
-      path: '/houseofblues',
-      element: <LocationEvents index={2} />
+      path: "/matches/:id",
+      element: <MatchDetail />,
     },
     {
-      path: '/pavilion',
-      element: <LocationEvents index={3} />
+      path: "/venues/:id",
+      element: <VenueDetail />,
     },
-    {
-      path: '/americanairlines',
-      element: <LocationEvents index={4} />
-    },
-    {
-      path: '/events',
-      element: <Events />
-    }
-  ])
+  ]);
 
   return (
-    <div className='app'>
+    <div className="app">
+      <header className="main-header">
+        <div className="header-title-card">
+          <h1>LOL Tournaments</h1>
+          <p className="header-subtitle">Schedule for League of Legends Tournaments</p>
+        </div>
 
-      <header className='main-header'>
-        <h1>UnityGrid Plaza</h1>
-
-        <div className='header-buttons'>
-          <Link to='/' role='button'>Home</Link>
-          <Link to='/events' role='button'>Events</Link>
+        <div className="header-buttons">
+          <Link to="/" role="button">
+            Home
+          </Link>
+          <Link to="/matches" role="button">
+            Matches
+          </Link>
         </div>
       </header>
 
-      <main>
-        {element}
-      </main>
+      <main>{element}</main>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

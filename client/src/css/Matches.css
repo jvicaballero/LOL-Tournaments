@@ -1,0 +1,133 @@
+.matches-page {
+  padding: 30px 50px;
+  color: white;
+}
+
+.matches-page h2 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: rgb(55, 216, 232);
+  margin: 0;
+}
+
+.matches-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.venue-filter {
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(55, 216, 232, 0.4);
+  border-radius: 6px;
+  color: white;
+  padding: 8px 12px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.venue-filter:focus {
+  outline: none;
+  border-color: rgb(55, 216, 232);
+}
+
+.matches-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.matches-status {
+  padding: 40px;
+  color: white;
+  text-align: center;
+}
+
+/* MatchDetail */
+
+.match-detail {
+  padding: 40px 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.back-link {
+  align-self: flex-start;
+}
+
+.match-detail-round {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.85em;
+  color: rgb(55, 216, 232);
+  margin: 0;
+}
+
+.match-detail-teams {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+.team-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: rgb(55, 216, 232);
+}
+
+.team-logo-large {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.team-block h3 {
+  color: white;
+  margin: 0;
+}
+
+.vs-large {
+  font-size: 2em;
+  font-weight: 900;
+  color: rgb(55, 216, 232);
+}
+
+.match-detail-info {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(55, 216, 232, 0.3);
+  border-radius: 8px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.match-detail-info p {
+  margin: 0;
+  font-size: 1em;
+}
+
+.match-detail-info i {
+  margin-right: 8px;
+  color: rgb(55, 216, 232);
+}
+
+.team-block.loser {
+  opacity: 0.35;
+  filter: grayscale(60%);
+}
+
+.team-block .team-victor-label {
+  font-size: 0.75em;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: rgb(55, 216, 232);
+  text-transform: uppercase;
+}
